@@ -12,17 +12,55 @@ body {
     padding: 2rem 1rem;
 }
 
- a {
-     color: #F87117;
- }
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-120%);
+    background: #111;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    z-index: 1000;
+    border-radius: 0 0 6px 0;
+}
 
- a:visited {
-     color: #8C3A03;
- }
- 
- a:hover {
-     color: #d85e0f;
- }
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+a {
+    color: #c2410c;
+}
+
+a:visited {
+    color: #8C3A03;
+}
+
+a:hover {
+    color: #9a3412;
+}
+
+a:focus-visible,
+summary:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #c2410c;
+    outline-offset: 2px;
+}
 
 .container {
     max-width: 720px;
@@ -141,7 +179,12 @@ ol li > ol {
     border-left-color: #111;
     background: #fafafa;
     padding-left: 1.25rem;
-    color: #d85e0f;
+    color: #9a3412;
+    text-decoration: underline;
+}
+
+.nav-list a:focus-visible {
+    text-decoration: underline;
 }
 
 .nav-list .link-title {
@@ -174,20 +217,6 @@ ol li > ol {
     font-size: 1.1rem;
 }
 
-@media (max-width: 640px) {
-    .container {
-        padding: 2rem 1.5rem;
-    }
-
-    h1 {
-        font-size: 1.35rem;
-    }
-
-    p, ul li {
-        font-size: 1rem;
-    }
-}
-
 .disclaimer {
     margin-top: 3rem;
     padding-top: 1.5rem;
@@ -197,7 +226,7 @@ ol li > ol {
 
 .disclaimer p {
     font-size: 0.85rem;
-    color: #999;
+    color: #666;
     line-height: 1.5;
     margin-bottom: 0;
 }
@@ -225,6 +254,11 @@ ol li > ol {
 
 .breadcrumb a:hover {
     color: #111;
+    text-decoration: underline;
+}
+
+.breadcrumb a:focus-visible {
+    text-decoration: underline;
 }
 
 table {
@@ -284,6 +318,11 @@ details summary {
     cursor: pointer;
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+details summary:hover {
+    text-decoration: underline;
+    background-color: #f8f8f8;
 }
 
 details > *:not(summary) {

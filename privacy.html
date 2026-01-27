@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="container">
-        <div id="top"></div>
-        <img src="assets/images/DontFeedTheMonkeys_lg.png" alt="Don't Feed the Monkeys" class="logo">
-        <nav class="breadcrumb">
-            <a href="index.html" aria-label="Back to Home">← Back to Home</a>
-        </nav>
+        <main id="main-content" tabindex="-1">
+            <div id="top"></div>
+            <img src="assets/images/DontFeedTheMonkeys_lg.png" alt="Don't Feed the Monkeys" class="logo">
+            <nav class="breadcrumb">
+                <a href="index.html" aria-label="Back to Home">← Back to Home</a>
+            </nav>
 
         <h1>Privacy Notice</h1>
 
@@ -54,7 +56,7 @@
 
         <p>
             The entire source code for this site is publicly available on
-            <a href="https://github.com/dntfeedthemnkys/dntfeedthemnkys.github.io/tree/main" aria-label="View the site source code on GitHub">GitHub</a>.
+            <a href="https://github.com/dntfeedthemnkys/dntfeedthemnkys.github.io/tree/main" target="_blank" rel="noopener noreferrer" aria-label="View the site source code on GitHub (opens in a new tab)">GitHub</a>.
             Every line of HTML, CSS, and JavaScript is there for you to inspect.
             If you find tracking code, call me out.
         </p>
@@ -133,7 +135,7 @@
             using recognised international transfer mechanisms.</p>
 
             <p><strong>Their full privacy policy:</strong>
-                <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" aria-label="Read GitHub's privacy policy">GitHub Privacy Policy</a>
+                <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer" aria-label="Read GitHub's privacy policy (opens in a new tab)">GitHub Privacy Policy</a>
             </p>
         </details>
 
@@ -187,7 +189,7 @@
             Cloudflare is a U.S. company and may process data in the United States. Cloudflare describes its international transfer mechanisms in its privacy policy.</p>
 
             <p><strong>Their full privacy policy:</strong>
-                <a href="https://www.cloudflare.com/privacypolicy/" aria-label="Read Cloudflare's privacy policy">Cloudflare Privacy Policy</a>
+                <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" aria-label="Read Cloudflare's privacy policy (opens in a new tab)">Cloudflare Privacy Policy</a>
             </p>
         </details>
 
@@ -218,41 +220,42 @@
         <p>Here is a summary of what each party can and cannot see.</p>
 
         <table>
+            <caption class="visually-hidden">Summary of data visibility for this website across the site owner, GitHub Pages hosting, and Cloudflare authoritative DNS</caption>
             <thead>
                 <tr>
-                    <th>Data Type</th>
-                    <th>What I see</th>
-                    <th>GitHub Pages (hosting)</th>
-                    <th>Cloudflare (authoritative DNS only)</th>
+                    <th scope="col">Data Type</th>
+                    <th scope="col">What I see</th>
+                    <th scope="col">GitHub Pages (hosting)</th>
+                    <th scope="col">Cloudflare (authoritative DNS only)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Your IP address</strong></td>
+                    <th scope="row"><strong>Your IP address</strong></th>
                     <td>Nothing</td>
                     <td>May appear in access logs</td>
                     <td>Usually sees resolver IP (not your IP)</td>
                 </tr>
                 <tr>
-                    <td><strong>Pages requested</strong></td>
+                    <th scope="row"><strong>Pages requested</strong></th>
                     <td>Nothing</td>
                     <td>May appear in access logs</td>
                     <td>No</td>
                 </tr>
                 <tr>
-                    <td><strong>Browser/device metadata</strong></td>
+                    <th scope="row"><strong>Browser/device metadata</strong></th>
                     <td>Nothing</td>
                     <td>May appear in access logs (user-agent)</td>
                     <td>No</td>
                 </tr>
                 <tr>
-                    <td><strong>Tracking or advertising cookies</strong></td>
+                    <th scope="row"><strong>Tracking or advertising cookies</strong></th>
                     <td>None</td>
                     <td>None set by this site for analytics/ads</td>
                     <td>None set by this site for analytics/ads</td>
                 </tr>
                 <tr>
-                    <td><strong>Personal info (name, email)</strong></td>
+                    <th scope="row"><strong>Personal info (name, email)</strong></th>
                     <td>Not collected</td>
                     <td>Not collected by this site</td>
                     <td>Not collected by this site</td>
@@ -294,7 +297,7 @@
 
         <p>If you have questions about this privacy notice or concerns about your data, you can:</p>
         <ul>
-            <li><a href="https://github.com/dntfeedthemnkys/dntfeedthemnkys.github.io/issues/new" aria-label="Open a new issue on GitHub">Open an issue on GitHub</a></li>
+            <li><a href="https://github.com/dntfeedthemnkys/dntfeedthemnkys.github.io/issues/new" target="_blank" rel="noopener noreferrer" aria-label="Open a new issue on GitHub (opens in a new tab)">Open an issue on GitHub</a></li>
             <li>Contact the infrastructure providers directly (links provided above)</li>
         </ul>
 
@@ -304,8 +307,8 @@
 
         <p><strong>Privacy Policy Links:</strong></p>
         <ul>
-            <li><a href="https://www.cloudflare.com/privacypolicy/" aria-label="Read Cloudflare's privacy policy">Cloudflare Privacy Policy</a></li>
-            <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" aria-label="Read GitHub's privacy statement">GitHub Privacy Statement</a></li>
+            <li><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" aria-label="Read Cloudflare's privacy policy (opens in a new tab)">Cloudflare Privacy Policy</a></li>
+            <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer" aria-label="Read GitHub's privacy statement (opens in a new tab)">GitHub Privacy Statement</a></li>
         </ul>
 
         <div class="disclaimer">
@@ -317,6 +320,7 @@
             </p>
         </div>
 
+        </main>
     </div>
 </body>
 </html>
