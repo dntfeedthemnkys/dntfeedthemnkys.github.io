@@ -238,6 +238,13 @@ ol li > ol {
     height: auto;
 }
 
+ .center-image {
+     display: block;
+     margin: 1.5rem auto;
+     max-width: 100%;
+     height: auto;
+ }
+
 .breadcrumb {
     margin-bottom: 2rem;
 }
