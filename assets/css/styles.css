@@ -130,6 +130,10 @@ p + ul {
     margin-top: -1rem;
 }
 
+p + ol {
+    margin-top: -1rem;
+}
+
 ul li {
     margin-bottom: 0.75rem;
     padding-left: 1.5rem;
@@ -150,12 +154,13 @@ ul li:before {
 }
 
 ol {
-    margin-bottom: 2rem;
+    margin: 1rem 0 1.25rem 0;
     padding-left: 1.5rem;
 }
 
 ol li {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
 }
 
 ol li:last-child {
@@ -339,6 +344,10 @@ hr {
     margin-bottom: 0;
 }
 
+.tldr-box ol {
+    margin-bottom: 0;
+}
+
 .tldr-box ul li:last-child {
     margin-bottom: 0;
 }
@@ -372,7 +381,7 @@ li[id^="ref-"]:target {
     background: #fff7ed;
 }
 
-details > *:not(summary) {
+details > summary + * {
     margin-top: 1rem;
 }
 
