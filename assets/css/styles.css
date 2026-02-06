@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #fafafa;
+    padding: 2rem 1rem;
+}
+
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-120%);
+    background: #111;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    z-index: 1000;
+    border-radius: 0 0 6px 0;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+a {
+    color: #c2410c;
+}
+
+a:visited {
+    color: #8C3A03;
+}
+
+a:hover {
+    color: #9a3412;
+}
+
+a:focus-visible,
+summary:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #c2410c;
+    outline-offset: 2px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem 2.5rem;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+ .container img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin-bottom: 1.5rem;
+ }
+
+ .image-caption {
+     font-size: 0.9rem;
+     font-style: italic;
+     color: #666;
+     margin-top: -1rem;
+     text-align: center;
+ }
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: #111;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+}
+
+h2 {
+    margin-bottom: 0.65625rem;
+    padding-bottom: 0.09375rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.section-spacer-top {
+    margin-top: 0.5rem;
+}
+
+.truth-section {
+    margin: 2.5rem 0;
+}
+
+.truth-section h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.09375rem;
+    color: #111;
+}
+
+ul {
+    list-style: none;
+    margin: 1rem 0 1.25rem 0;
+}
+
+p + ul {
+    margin-top: -1rem;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.05rem;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #666;
+    font-weight: bold;
+}
+
+ol {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+ol li {
+    margin-bottom: 1.25rem;
+}
+
+ol li:last-child {
+    margin-bottom: 0;
+}
+
+ol li > ul,
+ol li > ol {
+    margin-top: 0.75rem;
+}
+
+.nav-section {
+    margin: 3rem 0 2.5rem 0;
+    padding-top: 2.5rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.nav-section h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.09375rem;
+    color: #111;
+}
+
+.nav-list {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.nav-list li {
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+.nav-list li:before {
+    content: none;
+}
+
+.nav-list a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid #e5e5e5;
+    transition: all 0.2s ease;
+}
+
+.nav-list a:hover {
+    border-left-color: #111;
+    background: #fafafa;
+    padding-left: 1.25rem;
+    color: #9a3412;
+    text-decoration: underline;
+}
+
+.nav-list a:focus-visible {
+    text-decoration: underline;
+}
+
+.nav-list .link-title {
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.nav-list .link-description {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.closing {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.closing p {
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+}
+
+.closing .tagline {
+    font-weight: 600;
+    color: #111;
+    font-size: 1.1rem;
+}
+
+.disclaimer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.disclaimer p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 2rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+ .center-image {
+     display: block;
+     margin: 1.5rem auto;
+     max-width: 100%;
+     height: auto;
+ }
+
+.breadcrumb {
+    margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.breadcrumb a:visited {
+    color: #666;
+}
+
+.breadcrumb a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.breadcrumb a:focus-visible {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+    color: #111;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 2rem 0;
+}
+
+.tldr-box {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-left: 5px solid #333;
+    margin: 2rem 0;
+}
+
+.tldr-box h3 {
+    margin-top: 0;
+}
+
+.tldr-box ul {
+    margin-bottom: 0;
+}
+
+.tldr-box ul li:last-child {
+    margin-bottom: 0;
+}
+
+details {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+details summary:hover {
+    text-decoration: underline;
+    background-color: #f8f8f8;
+}
+
+li[id^="ref-"] {
+    scroll-margin-top: 2rem;
+}
+
+li[id^="ref-"]:target {
+    outline: 2px solid #c2410c;
+    outline-offset: 4px;
+    background: #fff7ed;
+}
+
+details > *:not(summary) {
+    margin-top: 1rem;
+}
+
+details ol {
+    margin-left: 1.25rem;
+    padding-left: 1rem;
+}
+
+details ol li {
+    padding-left: 0;
+}
+
+.note {
+    background: #fafafa;
+    border: 1px solid #e6e6e6;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+.tip-box {
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    border-left: 5px solid #c2410c;
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+}
+
+.tip-box p {
+    margin-bottom: 0;
+}
+
+.small {
+    font-size: 0.95rem;
+}

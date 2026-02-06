@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Quests | Optional Tools, Experiments, and Extras</title>
+    <meta name="description" content="Optional explorations beyond the fundamentals, including glucose monitoring, supplements with evidence, and AI tools for managing health data.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="container">
+        <main id="main-content" tabindex="-1">
+            <div id="top"></div>
+            <img src="assets/images/DontFeedTheMonkeys_lg.png" alt="Don't Feed the Monkeys" class="logo">
+            <nav class="breadcrumb">
+                <a href="index.html" aria-label="Back to Home">← Back to Home</a>
+            </nav>
+            <h1>Side Quests</h1>
+            <p>Coming soon.</p>
+
+            <!-- Test Prompt Embed-->
+            <!--<section aria-label="Prompt">
+                <h2>Prompt</h2>
+                <div id="prompt-content">Loading…</div>
+            </section>
+
+            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+
+            <script>
+                (async function () {
+                    const url = "https://github.com/dntfeedthemnkys/promptworks/blob/main/physical-performance/TDEE%20Estimation.md";
+
+                    // Cache-buster to reduce “stale” content, optional
+                    const cacheBustedUrl = url + "?v=" + Date.now();
+
+                    const res = await fetch(cacheBustedUrl, { cache: "no-store" });
+                    if (!res.ok) {
+                        document.getElementById("prompt-content").textContent =
+                            "Could not load prompt (" + res.status + ").";
+                        return;
+                    }
+
+                    const md = await res.text();
+                    const html = marked.parse(md);
+                    const safeHtml = DOMPurify.sanitize(html);
+
+                    document.getElementById("prompt-content").innerHTML = safeHtml;
+                })();
+            </script>-->
+
+
+
+
+            <div class="nav-section">
+                <h2>Your next move:</h2>
+                <ol class="nav-list">
+                    <li>
+                        <a href="weightloss_fundamentals.html">
+                            <span class="link-title">Weight Loss Fundamentals</span>
+                            <span class="link-description">Why the scale lies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="strength.html">
+                            <span class="link-title">Strength for Longevity</span>
+                            <span class="link-description">Why lifting today improves your independence tomorrow</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tools.html">
+                            <span class="link-title">Tools & Apps</span>
+                            <span class="link-description">What's actually worth using</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="disclaimer">
+                <p>Not medical advice. Consult your doctor before starting any diet or exercise program. Use at your own
+                    risk.</p>
+                <p>
+                    <a href="#top" aria-label="Back to top">Back to top</a>
+                    <span aria-hidden="true"> | </span>
+                    <a href="index.html" aria-label="Home">Home</a>
+                    <span aria-hidden="true"> | </span>
+                    <a href="privacy.html" aria-label="Privacy">Privacy</a>
+                </p>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
