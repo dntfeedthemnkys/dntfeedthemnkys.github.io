@@ -126,6 +126,10 @@ ul {
     margin: 1rem 0 1.25rem 0;
 }
 
+p + ul {
+    margin-top: -1rem;
+}
+
 ul li {
     margin-bottom: 0.75rem;
     padding-left: 1.5rem;
