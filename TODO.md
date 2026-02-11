@@ -39,3 +39,4 @@
   - [ ] Premise: imperfect human; swan dive into caloric surplus for months or even years
   - [ ] Premise: used this protocol multiple times to aggressively and rapidly cut **20+ kg** while maintaining **lean muscle mass**
 
+- [ ] Develop webapp tooling to assist with calculations of things like basal metabolic rate.
